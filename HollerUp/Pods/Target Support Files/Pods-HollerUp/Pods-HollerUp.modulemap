@@ -1,0 +1,6 @@
+framework module Pods_HollerUp {
+  umbrella header "Pods-HollerUp-umbrella.h"
+
+  export *
+  module * { export * }
+}

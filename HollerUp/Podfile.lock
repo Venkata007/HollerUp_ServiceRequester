@@ -1,0 +1,46 @@
+PODS:
+  - Alamofire (4.8.1)
+  - EZSwiftExtensions (2.0)
+  - FSCalendar (2.8.0)
+  - IQKeyboardManagerSwift (6.2.0)
+  - MMMaterialDesignSpinner (0.2.5)
+  - PopOverMenu (2.2.0)
+  - SDWebImage (4.4.4):
+    - SDWebImage/Core (= 4.4.4)
+  - SDWebImage/Core (4.4.4)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - EZSwiftExtensions
+  - FSCalendar
+  - IQKeyboardManagerSwift
+  - MMMaterialDesignSpinner
+  - PopOverMenu
+  - SDWebImage (~> 4.0)
+  - SwiftyJSON (~> 4.2.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - EZSwiftExtensions
+    - FSCalendar
+    - IQKeyboardManagerSwift
+    - MMMaterialDesignSpinner
+    - PopOverMenu
+    - SDWebImage
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  EZSwiftExtensions: f73648a591e529a1dbd83c22b19fd3e57df6fb7d
+  FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  MMMaterialDesignSpinner: a548042720c2e5f04212048483085d7942ac3e81
+  PopOverMenu: 89d26014f46964e3cf8b4f27540e36051b992a86
+  SDWebImage: c00ec18ab25d10e5ffac109b0f78d1b4341c9691
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: e36ab2f3a6821dac72d4f446300abfd24776cc7a
+
+COCOAPODS: 1.5.3

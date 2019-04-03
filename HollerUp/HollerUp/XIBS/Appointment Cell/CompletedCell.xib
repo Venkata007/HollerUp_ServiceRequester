@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Medium.ttf">
+            <string>Lato-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CompletedCell" id="KGk-i7-Jjw" customClass="CompletedCell" customModule="HollerUp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="340" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID: 0123456789012" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Wb-q4-cQc">
+                        <rect key="frame" x="10" y="10" width="145.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="7rH-oV-ryk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="18"/>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DD/YYMM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAi-V6-zSA">
+                        <rect key="frame" x="258.5" y="10" width="71.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="NDV-WG-6gX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="14"/>
+                        <color key="textColor" red="0.54117647059999996" green="0.54117647059999996" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="16"/>
+                        </variation>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfilePlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="vxI-8B-jTo">
+                        <rect key="frame" x="10" y="38" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="5Dt-wb-S9e"/>
+                            <constraint firstAttribute="height" constant="100" id="Ryi-cn-5gf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vamsi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VX-3v-J2T">
+                        <rect key="frame" x="120" y="38" width="212" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="xa5-uq-u77"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="18"/>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X77-Iq-6IV">
+                        <rect key="frame" x="120" y="63" width="212" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="hPZ-2q-ESf"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Slot: ">
+                                <attributes>
+                                    <font key="NSFont" size="16" name="Lato-Bold"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="6th March 2019- 18:30">
+                                <attributes>
+                                    <font key="NSFont" size="15" name="Lato-Medium"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <attributedString key="attributedText">
+                                <fragment content="Slot:">
+                                    <attributes>
+                                        <font key="NSFont" size="18" name="Lato-Bold"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content=" ">
+                                    <attributes>
+                                        <font key="NSFont" size="16" name="Lato-Bold"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="6th March 2019- 18:30">
+                                    <attributes>
+                                        <font key="NSFont" size="17" name="Lato-Medium"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMS-hA-JGs">
+                        <rect key="frame" x="120" y="88" width="212" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="NwQ-3b-jie"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Call Duration:">
+                                <attributes>
+                                    <font key="NSFont" size="16" name="Lato-Bold"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content=" ">
+                                <attributes>
+                                    <font key="NSFont" size="16" name="Lato-Medium"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="15:04 Minutes">
+                                <attributes>
+                                    <font key="NSFont" size="15" name="Lato-Medium"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <attributedString key="attributedText">
+                                <fragment content="Call Duration:">
+                                    <attributes>
+                                        <font key="NSFont" size="18" name="Lato-Medium"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content=" ">
+                                    <attributes>
+                                        <font key="NSFont" size="16" name="Lato-Medium"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="15:04 Minutes">
+                                    <attributes>
+                                        <font key="NSFont" size="17" name="Lato-Medium"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OT2-8K-0SV">
+                        <rect key="frame" x="120" y="113" width="212" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="zdA-Zv-L5H"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Earnings:">
+                                <attributes>
+                                    <font key="NSFont" size="16" name="Lato-Bold"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content=" ">
+                                <attributes>
+                                    <font key="NSFont" size="16" name="Lato-Medium"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="$24">
+                                <attributes>
+                                    <color key="NSColor" red="0.047058823530000002" green="0.71372549019999998" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="16" name="Lato-Medium"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <attributedString key="attributedText">
+                                <fragment content="Earnings:">
+                                    <attributes>
+                                        <font key="NSFont" size="18" name="Lato-Bold"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content=" ">
+                                    <attributes>
+                                        <font key="NSFont" size="16" name="Lato-Medium"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="$24">
+                                    <attributes>
+                                        <color key="NSColor" red="0.047058823530000002" green="0.71372549019999998" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="18" name="Lato-Medium"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                        </variation>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="X77-Iq-6IV" firstAttribute="leading" secondItem="vxI-8B-jTo" secondAttribute="trailing" constant="10" id="5vi-KK-xU8"/>
+                    <constraint firstItem="OT2-8K-0SV" firstAttribute="leading" secondItem="vxI-8B-jTo" secondAttribute="trailing" constant="10" id="9fc-7F-XQN"/>
+                    <constraint firstItem="vxI-8B-jTo" firstAttribute="top" secondItem="9Wb-q4-cQc" secondAttribute="bottom" constant="8" id="9yU-qO-ctd"/>
+                    <constraint firstItem="X77-Iq-6IV" firstAttribute="top" secondItem="4VX-3v-J2T" secondAttribute="bottom" constant="5" id="Htb-Pb-aC1"/>
+                    <constraint firstItem="OT2-8K-0SV" firstAttribute="top" secondItem="CMS-hA-JGs" secondAttribute="bottom" constant="5" id="IXa-hO-4WD"/>
+                    <constraint firstItem="vxI-8B-jTo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="MTs-ie-p71"/>
+                    <constraint firstItem="4VX-3v-J2T" firstAttribute="top" secondItem="vxI-8B-jTo" secondAttribute="top" id="TgY-2j-K7u"/>
+                    <constraint firstItem="CMS-hA-JGs" firstAttribute="top" secondItem="X77-Iq-6IV" secondAttribute="bottom" constant="5" id="TkM-rb-O4j"/>
+                    <constraint firstAttribute="trailing" secondItem="X77-Iq-6IV" secondAttribute="trailing" constant="8" id="Tqi-oo-7Vt"/>
+                    <constraint firstItem="9Wb-q4-cQc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Tz7-sf-Zhe"/>
+                    <constraint firstItem="9Wb-q4-cQc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="b2y-dh-06a"/>
+                    <constraint firstItem="CMS-hA-JGs" firstAttribute="leading" secondItem="vxI-8B-jTo" secondAttribute="trailing" constant="10" id="bZI-gG-vOc"/>
+                    <constraint firstItem="4VX-3v-J2T" firstAttribute="leading" secondItem="vxI-8B-jTo" secondAttribute="trailing" constant="10" id="clL-10-JVu"/>
+                    <constraint firstAttribute="trailing" secondItem="4VX-3v-J2T" secondAttribute="trailing" constant="8" id="ei5-Jb-fnf"/>
+                    <constraint firstAttribute="trailing" secondItem="OT2-8K-0SV" secondAttribute="trailing" constant="8" id="j4B-5b-ZPw"/>
+                    <constraint firstAttribute="trailing" secondItem="MAi-V6-zSA" secondAttribute="trailing" constant="10" id="oiC-Bc-Tbf"/>
+                    <constraint firstItem="MAi-V6-zSA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="t93-DG-Xq7"/>
+                    <constraint firstAttribute="trailing" secondItem="CMS-hA-JGs" secondAttribute="trailing" constant="8" id="zpo-zf-c7T"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="callDurationLbl" destination="CMS-hA-JGs" id="zUS-3o-NZF"/>
+                <outlet property="dateLbl" destination="MAi-V6-zSA" id="Nc4-Mo-tEn"/>
+                <outlet property="earningsLbl" destination="OT2-8K-0SV" id="LxT-PB-Epw"/>
+                <outlet property="idLbl" destination="9Wb-q4-cQc" id="AHL-g7-2CM"/>
+                <outlet property="imgView" destination="vxI-8B-jTo" id="olW-GK-LkR"/>
+                <outlet property="nameLbl" destination="4VX-3v-J2T" id="fPS-5l-aC2"/>
+                <outlet property="slotLbl" destination="X77-Iq-6IV" id="Nd3-a2-jGp"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="153.82308845577214"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ProfilePlaceholder" width="256" height="256"/>
+    </resources>
+</document>
