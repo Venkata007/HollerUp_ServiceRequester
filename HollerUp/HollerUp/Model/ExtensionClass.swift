@@ -93,7 +93,7 @@ extension UIColor{
         return #colorLiteral(red: 0.1490196078, green: 0.1960784314, blue: 0.2196078431, alpha: 1) //263238
     }
     static var secondaryColor:UIColor{
-        return #colorLiteral(red: 0.9921568627, green: 0.7960784314, blue: 0.431372549, alpha: 1) //fdcb6e
+        return #colorLiteral(red: 1, green: 0.8330218792, blue: 0.1556026936, alpha: 1) //FFD428
     }
     static var secondaryColor1:UIColor{
         return #colorLiteral(red: 0.5411764706, green: 0.5411764706, blue: 0.5411764706, alpha: 1) //8a8a8a
@@ -678,6 +678,27 @@ extension UIDevice {
         default:
             return .unknown
         }
+    }
+}
+extension UIView {
+    
+    func fitToSelf(childView: UIView) {
+        childView.translatesAutoresizingMaskIntoConstraints = false
+        let bindings = ["childView": childView]
+        self.addConstraints(
+            NSLayoutConstraint.constraints(
+                withVisualFormat : "H:|[childView]|",
+                options          : [],
+                metrics          : nil,
+                views            : bindings
+        ))
+        self.addConstraints(
+            NSLayoutConstraint.constraints(
+                withVisualFormat : "V:|[childView]|",
+                options          : [],
+                metrics          : nil,
+                views            : bindings
+        ))
     }
 }
 

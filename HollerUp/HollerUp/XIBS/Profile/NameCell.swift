@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import EZSwiftExtensions
 
 class NameCell: UITableViewCell {
 
@@ -16,6 +17,7 @@ class NameCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        TheGlobalPoolManager.cornerAndBorder(self.imgView, cornerRadius: self.imgView.h / 2, borderWidth: 0.5, borderColor: .lightGray)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

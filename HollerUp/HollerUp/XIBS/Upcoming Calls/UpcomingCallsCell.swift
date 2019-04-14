@@ -21,8 +21,8 @@ class UpcomingCallsCell: UICollectionViewCell {
         // Initialization code
         ez.runThisInMainThread {
             self.viewInView.addShadow(offset: CGSize.init(width: 0, height: 2), color: UIColor.black, radius: 2.0, opacity: 0.35 ,cornerRadius : 8)
-            self.weekDay.roundCorners(corners: [.topLeft,.topRight], radius: 8.0)
-            self.durationLbl.roundCorners(corners: [.bottomLeft,.bottomRight], radius: 8.0)
+            self.weekDay.roundCorners([.topLeft,.topRight], radius: 8.0)
+            self.durationLbl.roundCorners([.bottomLeft,.bottomRight], radius: 8.0)
         }
     }
     override var isSelected: Bool{

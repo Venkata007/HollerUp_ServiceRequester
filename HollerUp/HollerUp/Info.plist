@@ -2,6 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+<key>LSApplicationCategoryType</key>
+<string></string>
+<key>LSApplicationQueriesSchemes</key>
+<array>
+    <string>googlechromes</string>
+    <string>comgooglemaps</string>
+</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -11,7 +18,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>$(PRODUCT_NAME)</string>
+	<string>HollerUp_User</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -20,6 +27,14 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Sync the my events to Calendar.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Used for Uplaoding Profile pic </string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Used for uploading profile from Mobile Albums</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location is used to check the services available or not.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -28,12 +43,6 @@
 	<array>
 		<string>armv7</string>
 	</array>
-	<key>NSCalendarsUsageDescription</key>
-	<string>Sync the my events to Calendar.</string>
-	<key>NSCameraUsageDescription</key>
-	<string>Used for Uplaoding Profile pic </string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Used for uploading profile from Mobile Albums</string>
 	<key>UIRequiresFullScreen</key>
 	<true/>
 	<key>UISupportedInterfaceOrientations</key>

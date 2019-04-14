@@ -24,7 +24,7 @@ class PaymentCell: UITableViewCell {
         // Initialization code
         self.viewInView.cornerRadius = 8.0
         self.viewInView.backgroundColor = .white
-        self.monthLbl.roundCorners(corners: [.topLeft,.topRight], radius: 8.0)
+        self.monthLbl.roundCorners([.topLeft,.topRight], radius: 8.0)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -20,44 +20,33 @@ public struct Constants {
 //MARK : - ViewController IDs
 public  struct ViewControllerIDs {
     static let TabBarController                            = "TabBarController"
-    static let AppointmnetsViewController      = "AppointmnetsViewController"
-    static let PaymentsViewController               = "PaymentsViewController"
-    static let HomeViewController                     = "HomeViewController"
-    static let CalendarViewController                = "CalendarViewController"
-    static let ProfileViewController                     = "ProfileViewController"
     static let LoginViewController                      = "LoginViewController"
     static let ForgotPasswordVC                         = "ForgotPasswordVC"
     static let ResetPasswordVC                           = "ResetPasswordVC"
     static let ChangePasswordVC                      = "ChangePasswordVC"
-    static let AddCalendarEvent                        = "AddCalendarEvent"
-    static let SynchCalendarVC                          =  "SynchCalendarVC"
-    static let EditProfileViewController             = "EditProfileViewController"
-    static let PersonalDetailsVC                         = "PersonalDetailsVC"
-    static let ProfessionalDetailsVC                   = "ProfessionalDetailsVC"
-    static let PaymentsDetailsVC                       = "PaymentsDetailsVC"
+    static let SignUpViewController                  = "SignUpViewController"
+    static let SignUpView1                                  = "SignUpView1"
+    static let SignUpVie2                                     = "SignUpView2"
+    static let DashBoardViewController           = "DashBoardViewController"
+    static let ProfileViewController                    = "ProfileViewController"
+    static let BookingsViewController              = "BookingsViewController"
+    static let SearchViewController                   = "SearchViewController"
+    static let ServiceProviderDetailVC              = "ServiceProviderDetailVC"
+    static let PaymentViewController                = "PaymentViewController"
 }
 //MARK:- TableViewCellIdentifiers
 public struct TableViewCellIdentifiers{
-    static let AppointmentCell                                = "AppointmentCell"
-    static let PaymentCell                                         = "PaymentCell"
     static let NameCell                                              = "NameCell"
-    static let DetailsCell                                            = "DetailsCell"
     static let ProfileDetailsCell                                 = "ProfileDetailsCell"
     static let LogoutCell                                            =  "LogoutCell"
-    static let NewAppointmentCell                        = "NewAppointmentCell"
-    static let CompletedCell                                    = "CompletedCell"
-    static let RejectOptionsCell                               = "RejectOptionsCell"
-    static let SynchOptionsCell                               = "SynchOptionsCell"
-    static let UnbilledPaymentCell                          = "UnbilledPaymentCell"
-    static let PersonalInformationCell                    = "PersonalInformationCell"
-    static let EditProfileHeaderCell                         = "EditProfileHeaderCell"
-    static let DocumentsCell                                    = "DocumentsCell"
-    static let AddNewCell                                         = "AddNewCell"
-    static let SaveButtonCell                                    = "SaveButtonCell"
+    static let CurrentBookingCell                            = "CurrentBookingCell"
+    static let BookingsHistoryCell                           = "BookingsHistoryCell"
+    static let ServiceProviderCell                            = "ServiceProviderCell"
 }
 //MARK:- XIB Names
 public struct CollectionViewCellIdentifiers{
     static let UpcomingCallsCell                             =  "UpcomingCallsCell"
+    static let NextAvailabilityCell                            = "NextAvailabilityCell"
 }
 //MARK : - Device INFO
 public struct DeviceInfo {

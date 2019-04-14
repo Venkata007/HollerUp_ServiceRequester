@@ -272,7 +272,7 @@ class GlobalPool: NSObject {
 }
 class UILabelPadded: UILabel {
     override func drawText(in rect: CGRect) {
-        let insets = UIEdgeInsets.init(top: 0, left: 10, bottom: 0, right: 10)
+        let insets = UIEdgeInsets.init(top: 5, left: 5, bottom: 5, right: 5)
         super.drawText(in: UIEdgeInsetsInsetRect(rect, insets))
     }
 }

@@ -14,4 +14,7 @@ target 'HollerUp' do
   pod 'EZSwiftExtensions'
   pod 'FSCalendar'
   pod 'PopOverMenu'
+  pod 'GooglePlaces'
+  pod 'GooglePlacePicker'
+  pod 'GoogleMaps'
 end
