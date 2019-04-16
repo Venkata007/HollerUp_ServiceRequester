@@ -8,9 +8,6 @@
 
 import UIKit
 import EZSwiftExtensions
-import GoogleMaps
-import GooglePlaces
-import GooglePlacePicker
 
 class DashBoardViewController: UIViewController,PickerViewDelegate{
 
@@ -24,14 +21,6 @@ class DashBoardViewController: UIViewController,PickerViewDelegate{
     @IBOutlet weak var searchForServiceTF: UITextField!
     @IBOutlet var servicesBtns: [UIButton]!
     
-    var locationManager: CLLocationManager?
-    var myLocation: CLLocation?
-    var placesClient: GMSPlacesClient!
-    var lat: Float = 0.0
-    var long: Float = 0.0
-    var selectedLocation : String!
-    var selectedLatitude : Double!
-    var selectedLongitude : Double!
     
     var datePicker:PickerView!
     let date = Date()
@@ -56,25 +45,6 @@ class DashBoardViewController: UIViewController,PickerViewDelegate{
             view.addShadow(offset: CGSize.init(width: 0, height: 3), color: UIColor.black, radius: 3.0, opacity: 0.35 ,cornerRadius : 8)
         }
         self.searchBtn.addShadow(offset: CGSize.init(width: 0, height: 3), color: UIColor.black, radius: 3.0, opacity: 0.35 ,cornerRadius : 8)
-        
-        placesClient = GMSPlacesClient.shared()
-        placesClient.currentPlace(callback: { (placeLikelihoodList, error) -> Void in
-            if let error = error {
-                print("Pick Place error: \(error.localizedDescription)")
-                return
-            }
-            if let placeLikelihoodList = placeLikelihoodList {
-                let place = placeLikelihoodList.likelihoods.first?.place
-                if let place = place {
-                    print("Place name \(place.name!)")
-                    print("Place address \(place.formattedAddress!)")
-                    print("Place Latitude \(place.coordinate.latitude)")
-                    print("Place Longitude \(place.coordinate.longitude)")
-                    self.lat = Float(place.coordinate.latitude)
-                    self.long = Float(place.coordinate.longitude)
-                }
-            }
-        })
     }
     //MARK:- IB Action Outlets
     @IBAction func searchBtn(_ sender: UIButton) {
@@ -90,28 +60,15 @@ extension DashBoardViewController: UITextFieldDelegate {
         switch textField {
         case searchForServiceTF:
             searchForServiceTF.resignFirstResponder()
-            print(":::::::::::::::::::::::::::::::::::    Search For Service    :::::::::::::::::::::::::::::::::::::")
+            print(":::::::::::::::::::::::::::::::::::    Search For Service    ::::::::::::::::::::::")
             return false
         case locationTF:
             locationTF.resignFirstResponder()
             print(":::::::::::::::::::::::::::::::::::    Location    :::::::::::::::::::::::::::::::::::::")
-            self.view.endEditing(true)
-            locationManager = CLLocationManager()
-            locationManager?.requestAlwaysAuthorization()
-            locationManager?.startUpdatingLocation()
-            myLocation = locationManager?.location
-            let center: CLLocationCoordinate2D = CLLocationCoordinate2DMake(CLLocationDegrees(lat), CLLocationDegrees(long))
-            let northEast: CLLocationCoordinate2D = CLLocationCoordinate2DMake(center.latitude + 0.001, center.longitude + 0.001)
-            let southWest: CLLocationCoordinate2D = CLLocationCoordinate2DMake(center.latitude - 0.001, center.longitude - 0.001)
-            let viewport = GMSCoordinateBounds(coordinate: northEast, coordinate: southWest)
-            let config = GMSPlacePickerConfig(viewport: viewport)
-            let placePicker = GMSPlacePickerViewController(config: config)
-            placePicker.delegate = self
-            present(placePicker, animated: true, completion: nil)
             return false
         case availabilityTF:
             availabilityTF.resignFirstResponder()
-            print(":::::::::::::::::::::::::::::::::::    Availability    :::::::::::::::::::::::::::::::::::::")
+            print(":::::::::::::::::::::::::::::::::::    Availability    ::::::::::::::::::::::::::::::::::")
             self.datePickerView("Availability")
             return false
         default:
@@ -121,24 +78,6 @@ extension DashBoardViewController: UITextFieldDelegate {
     }
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
         return true
-    }
-}
-extension DashBoardViewController : CLLocationManagerDelegate,UISearchBarDelegate,GMSPlacePickerViewControllerDelegate{
-    func placePicker(_ viewController: GMSPlacePickerViewController, didPick place: GMSPlace) {
-        print("Place name \(place.name!)")
-        print("Place address \(place.formattedAddress!)")
-        print("Place Latitude \(place.coordinate.latitude)")
-        print("Place Longitude \(place.coordinate.longitude)")
-        self.locationTF.text = place.formattedAddress!
-        selectedLocation = place.formattedAddress?.replacingOccurrences(of: ",", with: "\n")
-        selectedLatitude = (place.coordinate.latitude)
-        selectedLongitude = place.coordinate.longitude
-        locationManager?.stopUpdatingLocation()
-        viewController.dismiss(animated: true, completion: nil)
-    }
-    func placePickerDidCancel(_ viewController: GMSPlacePickerViewController) {
-        viewController.dismiss(animated: true, completion: nil)
-        print("No place selected")
     }
 }
 extension DashBoardViewController {

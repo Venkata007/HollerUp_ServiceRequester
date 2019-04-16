@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6838B7EBFDC2B41428D911ACD541701C"
+               BlueprintIdentifier = "878BF2EB093320D2A95C2F69F3FC65AD"
                BuildableName = "Pods_HollerUp.framework"
                BlueprintName = "Pods-HollerUp"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6838B7EBFDC2B41428D911ACD541701C"
+            BlueprintIdentifier = "878BF2EB093320D2A95C2F69F3FC65AD"
             BuildableName = "Pods_HollerUp.framework"
             BlueprintName = "Pods-HollerUp"
             ReferencedContainer = "container:Pods.xcodeproj">

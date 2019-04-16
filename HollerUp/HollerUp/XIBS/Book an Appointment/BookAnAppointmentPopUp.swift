@@ -30,7 +30,8 @@ class BookAnAppointmentPopUp: UIViewController {
         ez.runThisInMainThread {
             TheGlobalPoolManager.cornerAndBorder(self.view, cornerRadius: 15, borderWidth: 0, borderColor: .clear)
         }
-        self.imgView.addShadow(offset: CGSize.init(width: 0, height: 3), color: UIColor.black, radius: 3.0, opacity: 0.35 ,cornerRadius : 10)
+        //self.imgView.addShadow(offset: CGSize.init(width: 0, height: 3), color: UIColor.black, radius: 3.0, opacity: 0.35 ,cornerRadius : 10)
+        TheGlobalPoolManager.cornerAndBorder(imgView, cornerRadius: 8, borderWidth: 0.5, borderColor: .lightGray)
     }
     //MARK:- IB Action Outlets
     @IBAction func cancelBtn(_ sender: UIButton) {

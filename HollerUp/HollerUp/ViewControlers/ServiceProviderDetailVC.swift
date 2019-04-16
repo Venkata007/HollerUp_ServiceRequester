@@ -50,7 +50,8 @@ class ServiceProviderDetailVC: UIViewController {
     }
     //MARK:- Update UI
     func updateUI(){
-        self.imgView.addShadow(offset: CGSize.init(width: 0, height: 3), color: UIColor.black, radius: 3.0, opacity: 0.35 ,cornerRadius : 10)
+        //self.imgView.addShadow(offset: CGSize.init(width: 0, height: 3), color: UIColor.black, radius: 3.0, opacity: 0.35 ,cornerRadius : 10)
+        TheGlobalPoolManager.cornerAndBorder(imgView, cornerRadius: 8, borderWidth: 0.5, borderColor: .lightGray)
         starRatingView.fullImage = #imageLiteral(resourceName: "Star_Full").withColor(.secondaryColor)
         starRatingView.emptyImage = #imageLiteral(resourceName: "Star_Empty").withColor(.secondaryColor)
         starRatingView.halfRatings = true

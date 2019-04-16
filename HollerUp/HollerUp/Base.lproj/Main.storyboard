@@ -592,14 +592,14 @@
                                     <constraint firstItem="73U-a0-1sL" firstAttribute="centerY" secondItem="vyg-HX-x2A" secondAttribute="centerY" constant="10" id="yTb-ov-rIK"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Vn-1a-QgJ">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Vn-1a-QgJ">
                                 <rect key="frame" x="0.0" y="70" width="375" height="597"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t2H-V7-tbt">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="597"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="607"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rjd-rM-NFx">
-                                                <rect key="frame" x="30" y="95" width="315" height="50"/>
+                                                <rect key="frame" x="30" y="95" width="315" height="60"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit Card Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjA-Qs-ehI">
                                                         <rect key="frame" x="20" y="-10" width="108" height="20"/>
@@ -613,30 +613,26 @@
                                                             <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
                                                         </variation>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Credit Card Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n7w-P9-1L6">
-                                                        <rect key="frame" x="20" y="15" width="280" height="20"/>
-                                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                        <variation key="heightClass=regular-widthClass=regular">
-                                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
-                                                        </variation>
-                                                    </textField>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pgj-fX-a2i">
+                                                        <rect key="frame" x="15" y="18" width="285" height="34"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="KjA-Qs-ehI" firstAttribute="leading" secondItem="rjd-rM-NFx" secondAttribute="leading" constant="20" id="0Xb-hI-kdR"/>
-                                                    <constraint firstItem="n7w-P9-1L6" firstAttribute="centerY" secondItem="rjd-rM-NFx" secondAttribute="centerY" id="BYB-fm-L6m"/>
-                                                    <constraint firstAttribute="height" constant="50" id="LQO-4z-hav">
+                                                    <constraint firstItem="Pgj-fX-a2i" firstAttribute="leading" secondItem="rjd-rM-NFx" secondAttribute="leading" constant="15" id="HAf-Wa-4GI"/>
+                                                    <constraint firstAttribute="height" constant="60" id="LQO-4z-hav">
                                                         <variation key="heightClass=regular-widthClass=regular" constant="60"/>
                                                     </constraint>
+                                                    <constraint firstItem="Pgj-fX-a2i" firstAttribute="top" secondItem="KjA-Qs-ehI" secondAttribute="bottom" constant="8" id="Nim-St-wnS"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Pgj-fX-a2i" secondAttribute="bottom" constant="8" id="UgO-Gs-dRw"/>
                                                     <constraint firstItem="KjA-Qs-ehI" firstAttribute="top" secondItem="rjd-rM-NFx" secondAttribute="top" constant="-10" id="aNN-QF-B0y"/>
-                                                    <constraint firstAttribute="trailing" secondItem="n7w-P9-1L6" secondAttribute="trailing" constant="15" id="cg4-pY-jbf"/>
-                                                    <constraint firstItem="n7w-P9-1L6" firstAttribute="leading" secondItem="rjd-rM-NFx" secondAttribute="leading" constant="20" id="sIz-tF-PEh"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Pgj-fX-a2i" secondAttribute="trailing" constant="15" id="qb8-Ft-gcT"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iJP-68-EUF">
-                                                <rect key="frame" x="30" y="245" width="315" height="50"/>
+                                                <rect key="frame" x="30" y="255" width="315" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Billing City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noD-p0-250">
                                                         <rect key="frame" x="20" y="-10" width="58" height="20"/>
@@ -675,8 +671,8 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpf-bf-UBs">
                                                 <rect key="frame" x="30" y="20" width="315" height="50"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9O-bq-lIH">
-                                                        <rect key="frame" x="20" y="-10" width="59" height="20"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9O-bq-lIH">
+                                                        <rect key="frame" x="20" y="-10" width="54" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="OM1-TM-1P6"/>
                                                         </constraints>
@@ -687,7 +683,7 @@
                                                             <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
                                                         </variation>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="966-1P-iWj">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="966-1P-iWj">
                                                         <rect key="frame" x="20" y="15" width="280" height="20"/>
                                                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
@@ -710,7 +706,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TGP-hK-HZP">
-                                                <rect key="frame" x="30" y="170" width="315" height="50"/>
+                                                <rect key="frame" x="30" y="180" width="315" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Billing Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4k-UI-fa7">
                                                         <rect key="frame" x="20" y="-10" width="79" height="20"/>
@@ -747,7 +743,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R6L-CK-jXi">
-                                                <rect key="frame" x="30" y="320" width="148" height="50"/>
+                                                <rect key="frame" x="30" y="330" width="148" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State/Provience" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZxD-a0-uzR">
                                                         <rect key="frame" x="20" y="-10" width="86.5" height="20"/>
@@ -784,7 +780,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DE9-ZD-iO1">
-                                                <rect key="frame" x="197" y="320" width="148" height="50"/>
+                                                <rect key="frame" x="197" y="330" width="148" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zip Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6B-6c-pDT">
                                                         <rect key="frame" x="20" y="-10" width="48" height="20"/>
@@ -821,7 +817,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RB1-xb-QvM">
-                                                <rect key="frame" x="30" y="390" width="315" height="50"/>
+                                                <rect key="frame" x="30" y="400" width="315" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Billing Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fyb-Wq-G4G">
                                                         <rect key="frame" x="20" y="-10" width="79.5" height="20"/>
@@ -858,7 +854,7 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="we will deduct $1 from your card for  verification &amp; return" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9NR-Tc-vdz">
-                                                <rect key="frame" x="8" y="455" width="359" height="34"/>
+                                                <rect key="frame" x="8" y="465" width="359" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="bJT-AI-ioE"/>
                                                 </constraints>
@@ -867,7 +863,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FN8-BC-Ceg">
-                                                <rect key="frame" x="30" y="519" width="315" height="50"/>
+                                                <rect key="frame" x="30" y="529" width="315" height="50"/>
                                                 <color key="backgroundColor" red="0.047058823530000002" green="0.71372549019999998" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="NmZ-Hi-Uol"/>
@@ -939,8 +935,15 @@
                     </view>
                     <connections>
                         <outlet property="backBtn" destination="73U-a0-1sL" id="9H1-13-aGp"/>
+                        <outlet property="billingAddressTF" destination="YzV-Wn-T2Y" id="cpO-ga-F3N"/>
+                        <outlet property="billingCityTF" destination="7ag-Xe-wkg" id="wlL-bX-I6V"/>
+                        <outlet property="billingCountryTF" destination="jrh-7G-aJM" id="zh0-D5-CKL"/>
+                        <outlet property="fullNameTF" destination="966-1P-iWj" id="SMF-qp-TjA"/>
+                        <outlet property="paymentCardView" destination="Pgj-fX-a2i" id="xVc-nJ-n0Y"/>
                         <outlet property="saveBtn" destination="FN8-BC-Ceg" id="qNb-ne-vEM"/>
                         <outlet property="skipBtn" destination="NMx-JS-kPn" id="7El-55-k6C"/>
+                        <outlet property="stateTF" destination="EIg-6h-4Os" id="Bh5-03-wh7"/>
+                        <outlet property="zipcodeTF" destination="yYi-pv-8ng" id="bzD-VC-E7n"/>
                         <outletCollection property="viewsInView" destination="gpf-bf-UBs" collectionClass="NSMutableArray" id="tti-EK-E5b"/>
                         <outletCollection property="viewsInView" destination="rjd-rM-NFx" collectionClass="NSMutableArray" id="DW2-nJ-hZe"/>
                         <outletCollection property="viewsInView" destination="TGP-hK-HZP" collectionClass="NSMutableArray" id="ql4-MG-uaG"/>
@@ -952,7 +955,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ojI-Fx-rii" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1788" y="806"/>
+            <point key="canvasLocation" x="1788" y="805.54722638680664"/>
         </scene>
         <!--Forgot PasswordVC-->
         <scene sceneID="dMT-Sd-MGQ">
@@ -2223,6 +2226,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t55-gO-mPi">
                                 <rect key="frame" x="0.0" y="70" width="375" height="597"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="d4E-YK-PDM">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2852,7 +2856,7 @@
         <image name="Medical" width="78" height="78"/>
         <image name="Profile-Active" width="24" height="24"/>
         <image name="Profile-Deactive" width="24" height="24"/>
-        <image name="ProfilePlaceholder" width="164" height="164"/>
+        <image name="ProfilePlaceholder" width="100" height="100"/>
         <image name="Search" width="171" height="171"/>
         <image name="Share" width="16" height="24"/>
         <image name="Star_Empty" width="67" height="67"/>

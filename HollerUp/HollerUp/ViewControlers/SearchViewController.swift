@@ -19,7 +19,7 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var imageSliderView: ImageSlideshow!
     @IBOutlet weak var imagePageControl: UIPageControl!
-    var imagesArray = [#imageLiteral(resourceName: "Img4"),#imageLiteral(resourceName: "Img3"),#imageLiteral(resourceName: "Img1"),#imageLiteral(resourceName: "Img2"),#imageLiteral(resourceName: "Img5")]
+    var imagesArray = [#imageLiteral(resourceName: "Banner_02"),#imageLiteral(resourceName: "Banner_01"),]
     var bannerImages = [ImageSource]()
     
     var lastSelectedIndexPath:Int = 0

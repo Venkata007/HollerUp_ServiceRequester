@@ -13,7 +13,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var titleArray = ["Mobile","Email ID","Payment Details","Settings","Refer & Earn"]
     var detailsArray = ["+91 9533565007","vamsi@gmail.com","ICICI Bank","",""]
-    var imagesArray = [#imageLiteral(resourceName: "Mobile"),#imageLiteral(resourceName: "Mail_id"),#imageLiteral(resourceName: "Payments"),#imageLiteral(resourceName: "Documents"),#imageLiteral(resourceName: "Documents")]
+    var imagesArray = [#imageLiteral(resourceName: "Mobile"),#imageLiteral(resourceName: "Mail_id"),#imageLiteral(resourceName: "Payments"),#imageLiteral(resourceName: "Settings"),#imageLiteral(resourceName: "Refer")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,7 +84,9 @@ extension ProfileViewController: UITableViewDataSource,UITableViewDelegate {
         }else{
             TheGlobalPoolManager.showAlertWith(title: "Are you sure", message: "Do you want to Logout?", singleAction: false, okTitle:"Confirm") { (sucess) in
                 if sucess!{
-                    
+                    if let viewCon = self.storyboard?.instantiateViewController(withIdentifier: ViewControllerIDs.LoginViewController) as? LoginViewController{
+                        self.navigationController?.pushViewController(viewCon, animated: true)
+                    }
                 }
             }
         }

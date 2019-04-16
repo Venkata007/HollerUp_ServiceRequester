@@ -2,35 +2,24 @@ PODS:
   - Alamofire (4.8.1)
   - EZSwiftExtensions (2.0)
   - FSCalendar (2.8.0)
-  - GoogleMaps (3.0.3):
-    - GoogleMaps/Maps (= 3.0.3)
-  - GoogleMaps/Base (3.0.3)
-  - GoogleMaps/Maps (3.0.3):
-    - GoogleMaps/Base
-  - GooglePlacePicker (3.0.3):
-    - GoogleMaps (= 3.0.3)
-    - GooglePlaces (= 3.0.3)
-  - GooglePlaces (3.0.3):
-    - GoogleMaps/Base (= 3.0.3)
   - IQKeyboardManagerSwift (6.2.0)
   - MMMaterialDesignSpinner (0.2.5)
   - PopOverMenu (2.2.0)
   - SDWebImage (4.4.4):
     - SDWebImage/Core (= 4.4.4)
   - SDWebImage/Core (4.4.4)
+  - Stripe (15.0.0)
   - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
   - EZSwiftExtensions
   - FSCalendar
-  - GoogleMaps
-  - GooglePlacePicker
-  - GooglePlaces
   - IQKeyboardManagerSwift
   - MMMaterialDesignSpinner
   - PopOverMenu
   - SDWebImage (~> 4.0)
+  - Stripe
   - SwiftyJSON (~> 4.2.0)
 
 SPEC REPOS:
@@ -38,28 +27,24 @@ SPEC REPOS:
     - Alamofire
     - EZSwiftExtensions
     - FSCalendar
-    - GoogleMaps
-    - GooglePlacePicker
-    - GooglePlaces
     - IQKeyboardManagerSwift
     - MMMaterialDesignSpinner
     - PopOverMenu
     - SDWebImage
+    - Stripe
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   EZSwiftExtensions: f73648a591e529a1dbd83c22b19fd3e57df6fb7d
   FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
-  GoogleMaps: fd5c9fa58871781b9fb94d4936f19c69fe60ce32
-  GooglePlacePicker: 0c90898945f02ef36cce86fc9a107e1c5d3d26b1
-  GooglePlaces: f09e76993c9c3ee4af8f4f7f535bb94d6aa3b649
   IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
   MMMaterialDesignSpinner: a548042720c2e5f04212048483085d7942ac3e81
   PopOverMenu: 89d26014f46964e3cf8b4f27540e36051b992a86
   SDWebImage: c00ec18ab25d10e5ffac109b0f78d1b4341c9691
+  Stripe: 312b22a67af9fa55c246d26148b3f3a9636a0ff2
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 628eaa5f01b80f6aaeeabe6906f937a61256a141
+PODFILE CHECKSUM: 53bd71e412f3e680807ff798e5da6493348daba6
 
 COCOAPODS: 1.5.3
