@@ -27,7 +27,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.pushingToRootViewController()
         return true
     }
-
     func applicationWillResignActive(_ application: UIApplication) {}
 
     func applicationDidEnterBackground(_ application: UIApplication) {}

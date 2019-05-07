@@ -33,6 +33,8 @@ public  struct ViewControllerIDs {
     static let SearchViewController                   = "SearchViewController"
     static let ServiceProviderDetailVC              = "ServiceProviderDetailVC"
     static let PaymentViewController                = "PaymentViewController"
+    static let EditProfileViewController             = "EditProfileViewController"
+    static let SettingsViewController                 = "SettingsViewController"
 }
 //MARK:- TableViewCellIdentifiers
 public struct TableViewCellIdentifiers{
@@ -42,6 +44,7 @@ public struct TableViewCellIdentifiers{
     static let CurrentBookingCell                            = "CurrentBookingCell"
     static let BookingsHistoryCell                           = "BookingsHistoryCell"
     static let ServiceProviderCell                            = "ServiceProviderCell"
+    static let SettingsCell                                          = "SettingsCell"
 }
 //MARK:- XIB Names
 public struct CollectionViewCellIdentifiers{
@@ -67,7 +70,8 @@ public struct ToastMessages {
     static let Success                     = "Success...😀"
     static let Email_Address_Is_Not_Valid  = "Email address is not valid"
     static let Invalid_Email               = "Invalid Email Address"
-    static let Invalid_FirstName           = "Invalid Username"
+    static let Invalid_FirstName           = "Invalid FirstName"
+    static let Invalid_LastName           = "Invalid LastName"
     static let Invalid_Number              = "Invalid Mobile Number"
     static let Invalid_Password            = "Password must contains min 6 character"
     static let Invalid_Current_Password = "Invalid Current Password"

@@ -25,11 +25,17 @@ class PaymentViewController: UIViewController {
     @IBOutlet weak var billingCountryTF: UITextField!
     
     let paymentTextField = STPPaymentCardTextField()
+    var isComingFromProfile : Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.updateUI()
+        if isComingFromProfile{
+            self.skipBtn.isHidden = true
+        }else{
+            self.backBtn.isHidden = true
+        }
     }
     //MARK:- Update UI
     func updateUI(){
@@ -48,6 +54,7 @@ class PaymentViewController: UIViewController {
     //MARK:- IB Action Outlets
     @IBAction func skipBtn(_ sender: UIButton) {
         self.pushingToDashBoardVC()
+        //self.handleAddPaymentOptionButtonTapped()
     }
     @IBAction func backBtn(_ sender: UIButton) {
         ez.topMostVC?.popVC()
@@ -68,7 +75,7 @@ extension PaymentViewController{
             }
         }
         self.navigationController?.pushViewController(controller, animated: true)
-    }
+    }   
 }
 extension PaymentViewController : STPPaymentCardTextFieldDelegate{
     func paymentCardTextFieldDidChange(_ textField: STPPaymentCardTextField) {
@@ -95,5 +102,28 @@ extension PaymentViewController : STPPaymentCardTextFieldDelegate{
                 print(token!)
             }
         }
+    }
+}
+extension PaymentViewController : STPAddCardViewControllerDelegate{
+    func handleAddPaymentOptionButtonTapped() {
+        let addCardViewController = STPAddCardViewController()
+        addCardViewController.delegate = self
+        let navigationController = UINavigationController(rootViewController: addCardViewController)
+        present(navigationController, animated: true)
+    }
+    // MARK: STPAddCardViewControllerDelegate
+    func addCardViewControllerDidCancel(_ addCardViewController: STPAddCardViewController) {
+        dismiss(animated: true)
+    }
+    func addCardViewController(_ addCardViewController: STPAddCardViewController, didCreateToken token: STPToken, completion: @escaping STPErrorBlock) {(token, completion: { (error: Error?) in
+            if let error = error {
+                completion(error)
+            }
+            else {
+                completion(nil)
+                print(token)
+                self.dismiss(animated: true)
+            }
+        })
     }
 }

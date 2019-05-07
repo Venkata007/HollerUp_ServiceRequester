@@ -11,6 +11,7 @@ import EZSwiftExtensions
 
 class ResetPasswordVC: UIViewController {
 
+    @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet var viewsInView: [UIView]!
     @IBOutlet weak var currentPasswordTF: UITextField!
     @IBOutlet weak var newPasswordTF: UITextField!
@@ -20,10 +21,15 @@ class ResetPasswordVC: UIViewController {
     @IBOutlet weak var currentpasswordHideBtn: UIButton!
     @IBOutlet weak var confirmPasswordHideBtn: UIButton!
     
+    var isComingFromSettings : Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view
         self.updateUI()
+        if isComingFromSettings{
+            self.titleLbl.text = "Change Password"
+        }
     }
     //MARK:- Update UI
     func updateUI(){

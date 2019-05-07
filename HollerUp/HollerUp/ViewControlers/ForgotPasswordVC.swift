@@ -39,7 +39,7 @@ class ForgotPasswordVC: UIViewController,OTPTextFieldDelegate {
     //MARK:- Update UI
     func updateUI(){
         self.OTPBgView.isHidden = true
-     self.emailIDViewInView.addShadow(offset: CGSize.init(width: 0, height: 3), color: UIColor.black, radius: 3.0, opacity: 0.35 ,cornerRadius : 10)
+        self.emailIDViewInView.addShadow(offset: CGSize.init(width: 0, height: 3), color: UIColor.black, radius: 3.0, opacity: 0.35 ,cornerRadius : 10)
         self.mobileNumberViewInView.addShadow(offset: CGSize.init(width: 0, height: 3), color: UIColor.black, radius: 3.0, opacity: 0.35 ,cornerRadius : 10)
         self.submitBtn.addShadow(offset: CGSize.init(width: 0, height: 3), color: UIColor.black, radius: 3.0, opacity: 0.35 ,cornerRadius : 10)
         self.orLbl.addShadow(offset: CGSize.init(width: 0, height: 3), color: UIColor.black, radius: 3.0, opacity: 0.35 ,cornerRadius : self.orLbl.h / 2)
@@ -48,7 +48,7 @@ class ForgotPasswordVC: UIViewController,OTPTextFieldDelegate {
             TheGlobalPoolManager.cornerAndBorder(self.otpsBgView, cornerRadius: 10, borderWidth: 0, borderColor: .clear)
             TheGlobalPoolManager.cornerRadiusForParticularCornerr(self.OTP1, corners: [.topLeft,.bottomLeft], size: CGSize(width: 10, height: 0))
             TheGlobalPoolManager.cornerRadiusForParticularCornerr(self.OTP4, corners: [.topRight,.bottomRight], size: CGSize(width: 10, height: 0))
-             TheGlobalPoolManager.cornerRadiusForParticularCornerr(self.otpCancelBtn, corners: [.bottomLeft], size: CGSize(width: 10, height: 0))
+            TheGlobalPoolManager.cornerRadiusForParticularCornerr(self.otpCancelBtn, corners: [.bottomLeft], size: CGSize(width: 10, height: 0))
             TheGlobalPoolManager.cornerRadiusForParticularCornerr(self.otpContinueBtn, corners: [.bottomRight], size: CGSize(width: 10, height: 0))
         }
         OTP1.delegate = self

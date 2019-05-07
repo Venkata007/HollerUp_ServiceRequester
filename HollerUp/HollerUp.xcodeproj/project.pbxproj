@@ -79,6 +79,7 @@
 		A3A45A35225CD0CC00F002A9 /* BookAnAppointmentPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A45A33225CD0CC00F002A9 /* BookAnAppointmentPopUp.swift */; };
 		A3A45A36225CD0CC00F002A9 /* BookAnAppointmentPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3A45A34225CD0CC00F002A9 /* BookAnAppointmentPopUp.xib */; };
 		A3A45A38225DF37B00F002A9 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A45A37225DF37B00F002A9 /* PaymentViewController.swift */; };
+		A3CC41B9228188470067F97A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC41B8228188470067F97A /* SettingsViewController.swift */; };
 		A3EE5DA7224E3D9200779E3F /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EE5DA5224E3D9200779E3F /* PickerView.swift */; };
 		A3EE5DA8224E3D9200779E3F /* PickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3EE5DA6224E3D9200779E3F /* PickerView.xib */; };
 		A3F1ABA4225B1E90002074F5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1ABA3225B1E90002074F5 /* SignUpViewController.swift */; };
@@ -89,6 +90,7 @@
 		A3F1ABC8225B676F002074F5 /* BookingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1ABC7225B676F002074F5 /* BookingsViewController.swift */; };
 		A3F1ABD7225C6AB9002074F5 /* BookingsHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1ABD5225C6AB9002074F5 /* BookingsHistoryCell.swift */; };
 		A3F1ABD8225C6AB9002074F5 /* BookingsHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3F1ABD6225C6AB9002074F5 /* BookingsHistoryCell.xib */; };
+		A3F63B3C2267010900ED72E7 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F63B3B2267010800ED72E7 /* EditProfileViewController.swift */; };
 		A3F69B47225489770040A274 /* UISideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F69B44225489770040A274 /* UISideMenuNavigationController.swift */; };
 		A3F69B48225489770040A274 /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F69B45225489770040A274 /* SideMenuManager.swift */; };
 		A3F69B49225489770040A274 /* SideMenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F69B46225489770040A274 /* SideMenuTransition.swift */; };
@@ -187,6 +189,7 @@
 		A3A45A33225CD0CC00F002A9 /* BookAnAppointmentPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAnAppointmentPopUp.swift; sourceTree = "<group>"; };
 		A3A45A34225CD0CC00F002A9 /* BookAnAppointmentPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookAnAppointmentPopUp.xib; sourceTree = "<group>"; };
 		A3A45A37225DF37B00F002A9 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		A3CC41B8228188470067F97A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A3EE5DA5224E3D9200779E3F /* PickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		A3EE5DA6224E3D9200779E3F /* PickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerView.xib; sourceTree = "<group>"; };
 		A3F1ABA3225B1E90002074F5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -197,6 +200,7 @@
 		A3F1ABC7225B676F002074F5 /* BookingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingsViewController.swift; sourceTree = "<group>"; };
 		A3F1ABD5225C6AB9002074F5 /* BookingsHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingsHistoryCell.swift; sourceTree = "<group>"; };
 		A3F1ABD6225C6AB9002074F5 /* BookingsHistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingsHistoryCell.xib; sourceTree = "<group>"; };
+		A3F63B3B2267010800ED72E7 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		A3F69B44225489770040A274 /* UISideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISideMenuNavigationController.swift; sourceTree = "<group>"; };
 		A3F69B45225489770040A274 /* SideMenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuManager.swift; sourceTree = "<group>"; };
 		A3F69B46225489770040A274 /* SideMenuTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTransition.swift; sourceTree = "<group>"; };
@@ -284,6 +288,8 @@
 				A3F1ABC7225B676F002074F5 /* BookingsViewController.swift */,
 				A3A45A00225C747000F002A9 /* SearchViewController.swift */,
 				A3A45A30225CAB1300F002A9 /* ServiceProviderDetailVC.swift */,
+				A3F63B3B2267010800ED72E7 /* EditProfileViewController.swift */,
+				A3CC41B8228188470067F97A /* SettingsViewController.swift */,
 			);
 			path = ViewControlers;
 			sourceTree = "<group>";
@@ -653,10 +659,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-HollerUp/Pods-HollerUp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/EZSwiftExtensions/EZSwiftExtensions.framework",
-				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/MMMaterialDesignSpinner/MMMaterialDesignSpinner.framework",
-				"${BUILT_PRODUCTS_DIR}/PopOverMenu/PopOverMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -665,10 +669,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZSwiftExtensions.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMMaterialDesignSpinner.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopOverMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -685,6 +687,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3F63B3C2267010900ED72E7 /* EditProfileViewController.swift in Sources */,
 				A3A45A1A225C76CE00F002A9 /* ImageSlideshow.swift in Sources */,
 				A30B8549222FC4F2009A7A96 /* WebViewViewController.swift in Sources */,
 				A3A45A35225CD0CC00F002A9 /* BookAnAppointmentPopUp.swift in Sources */,
@@ -696,6 +699,7 @@
 				A371A4C522314C5F00F6D7C0 /* TabBarController.swift in Sources */,
 				A30B854A222FC4F2009A7A96 /* Reachability.m in Sources */,
 				A3F69B48225489770040A274 /* SideMenuManager.swift in Sources */,
+				A3CC41B9228188470067F97A /* SettingsViewController.swift in Sources */,
 				A397AC682237BCAC00FE1F1C /* PaymentCell.swift in Sources */,
 				A30B8541222FC4F2009A7A96 /* AppDelegate.swift in Sources */,
 				A397AC782237CC8900FE1F1C /* ProfileDetailsCell.swift in Sources */,

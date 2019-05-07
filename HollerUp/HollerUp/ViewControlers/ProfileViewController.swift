@@ -11,9 +11,12 @@ import UIKit
 class ProfileViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var editProfileBtn: UIButton!
+    
     var titleArray = ["Mobile","Email ID","Payment Details","Settings","Refer & Earn"]
     var detailsArray = ["+91 9533565007","vamsi@gmail.com","ICICI Bank","",""]
     var imagesArray = [#imageLiteral(resourceName: "Mobile"),#imageLiteral(resourceName: "Mail_id"),#imageLiteral(resourceName: "Payments"),#imageLiteral(resourceName: "Settings"),#imageLiteral(resourceName: "Refer")]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +33,12 @@ class ProfileViewController: UIViewController {
         self.tableView.tableFooterView = UIView()
     }
     //MARK:- IB Action Outlets
+    @IBAction func editProfileBtn(_ sender: UIButton) {
+        if let viewCon = self.storyboard?.instantiateViewController(withIdentifier: ViewControllerIDs.EditProfileViewController) as? EditProfileViewController{
+            viewCon.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(viewCon, animated: true)
+        }
+    }
 }
 extension ProfileViewController: UITableViewDataSource,UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -58,6 +67,21 @@ extension ProfileViewController: UITableViewDataSource,UITableViewDelegate {
         }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.section {
+        case 3:
+            if let viewCon = self.storyboard?.instantiateViewController(withIdentifier: ViewControllerIDs.PaymentViewController) as? PaymentViewController{
+                viewCon.hidesBottomBarWhenPushed = true
+                viewCon.isComingFromProfile = true
+                self.navigationController?.pushViewController(viewCon, animated: true)
+            }
+        case 4:
+            if let viewCon = self.storyboard?.instantiateViewController(withIdentifier: ViewControllerIDs.SettingsViewController) as? SettingsViewController{
+                viewCon.hidesBottomBarWhenPushed = true
+                self.navigationController?.pushViewController(viewCon, animated: true)
+            }
+        default:
+            break
+        }
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0{

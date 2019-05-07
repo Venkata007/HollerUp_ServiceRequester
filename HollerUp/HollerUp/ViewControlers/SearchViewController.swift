@@ -19,9 +19,8 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var imageSliderView: ImageSlideshow!
     @IBOutlet weak var imagePageControl: UIPageControl!
-    var imagesArray = [#imageLiteral(resourceName: "Banner_02"),#imageLiteral(resourceName: "Banner_01"),]
+    var imagesArray = [#imageLiteral(resourceName: "Banner_02"),#imageLiteral(resourceName: "Banner_01")]
     var bannerImages = [ImageSource]()
-    
     var lastSelectedIndexPath:Int = 0
     
     override func viewDidLoad() {
@@ -87,7 +86,7 @@ extension SearchViewController: UITableViewDataSource,UITableViewDelegate {
         return 285
     }
 }
-extension SearchViewController : UICollectionViewDelegate,UICollectionViewDataSource{
+extension SearchViewController : UICollectionViewDelegate,UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 7
     }
@@ -102,7 +101,7 @@ extension SearchViewController : UICollectionViewDelegate,UICollectionViewDataSo
         return CGSize(width: 80, height: 80);
     }
 }
-extension SearchViewController{
+extension SearchViewController {
     @objc func pushingToProviderDetailVC(){
         if let viewCon = self.storyboard?.instantiateViewController(withIdentifier: ViewControllerIDs.ServiceProviderDetailVC) as? ServiceProviderDetailVC{
             self.navigationController?.pushViewController(viewCon, animated: true)

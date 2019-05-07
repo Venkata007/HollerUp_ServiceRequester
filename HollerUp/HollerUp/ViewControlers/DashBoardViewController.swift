@@ -21,7 +21,6 @@ class DashBoardViewController: UIViewController,PickerViewDelegate{
     @IBOutlet weak var searchForServiceTF: UITextField!
     @IBOutlet var servicesBtns: [UIButton]!
     
-    
     var datePicker:PickerView!
     let date = Date()
     
@@ -60,15 +59,12 @@ extension DashBoardViewController: UITextFieldDelegate {
         switch textField {
         case searchForServiceTF:
             searchForServiceTF.resignFirstResponder()
-            print(":::::::::::::::::::::::::::::::::::    Search For Service    ::::::::::::::::::::::")
             return false
         case locationTF:
             locationTF.resignFirstResponder()
-            print(":::::::::::::::::::::::::::::::::::    Location    :::::::::::::::::::::::::::::::::::::")
             return false
         case availabilityTF:
             availabilityTF.resignFirstResponder()
-            print(":::::::::::::::::::::::::::::::::::    Availability    ::::::::::::::::::::::::::::::::::")
             self.datePickerView("Availability")
             return false
         default:

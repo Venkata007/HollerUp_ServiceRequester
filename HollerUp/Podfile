@@ -12,7 +12,5 @@ target 'HollerUp' do
   pod 'SwiftyJSON', '~> 4.2.0'
   pod 'SDWebImage', '~> 4.0'
   pod 'EZSwiftExtensions'
-  pod 'FSCalendar'
-  pod 'PopOverMenu'
   pod 'Stripe'
 end

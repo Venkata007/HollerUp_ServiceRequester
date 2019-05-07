@@ -41,4 +41,25 @@ class SignUpViewController: UIViewController {
         }
     }
 }
-
+extension SignUpViewController {
+    //MARK:- Validation
+    func validate() -> Bool{
+        if (self.firstNameTF.text?.isEmpty)!{
+            TheGlobalPoolManager.showToastView(ToastMessages.Invalid_FirstName)
+            return false
+        }else if (self.lastNameTF.text?.isEmpty)!{
+            TheGlobalPoolManager.showToastView(ToastMessages.Invalid_LastName)
+            return false
+        }else if (self.mobileNumberTF.text?.isEmpty)!{
+            TheGlobalPoolManager.showToastView(ToastMessages.Invalid_Number)
+            return false
+        }else if (self.emailIDTF.text?.isEmpty)!{
+            TheGlobalPoolManager.showToastView(ToastMessages.Invalid_Email)
+            return false
+        }else if !TheGlobalPoolManager.isValidEmail(testStr: emailIDTF.text!){
+            TheGlobalPoolManager.showToastView(ToastMessages.Email_Address_Is_Not_Valid)
+            return false
+        }
+        return true
+    }
+}
